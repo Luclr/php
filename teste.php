@@ -1,7 +1,7 @@
 <?php
 
-    echo "meu primeiro código PHP! "Olá mundo";
+echo "Olá mundo";
 
-    echo "olá HCODE!";
+echo "Olá Udemy";
 
 ?>
