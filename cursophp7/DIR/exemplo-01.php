@@ -2,18 +2,19 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-echo "DIR: " . __DIR__ . "<br>";
-echo "Usuário PHP: " . get_current_user() . "<br>";
+$name = "image";
 
-$dir = __DIR__ . "/images";
 
-if (!is_dir($dir)) {
-    if (mkdir($dir, 0755)) {
-        echo "mkdir retornou TRUE";
+if (!is_dir($name)) 
+     {
+        mkdir($name);
+        echo "Diretorio $name criado com sucesso!";
     } else {
-        echo "mkdir retornou FALSE<br>";
-        var_dump(error_get_last());
+
+        rmdir($name);
+        echo "Diretorio $name foi removido!";
+        
     }
-} else {
-    echo "Diretório já existe";
-}
+
+
+?>
