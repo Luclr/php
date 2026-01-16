@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$name = "image";
+$name = "images";
 
 
 if (!is_dir($name)) 

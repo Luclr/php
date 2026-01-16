@@ -12,7 +12,7 @@ foreach($images as $img) {
     $info = pathinfo($filename);
     $info ["size"] = filesize($filename);
     $info["modified"] = date("d/m/Y H:i:s", filemtime($filename));
-    $info["url"] = "http://localhost/cursophp7/DIR/".$filename;
+    $info["url"] = "http://localhost/DIR/".$filename;
 
     array_push($data, $info);
 
